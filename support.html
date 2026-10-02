@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>الدعم | بلوت ماستر</title>
+  <meta name="description" content="أسئلة متكررة عن بلوت ماستر، ونموذج تواصل معنا." />
+  <link rel="icon" href="img/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&family=Reem+Kufi:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/icon.png" alt="" /><span>بلوت ماستر</span></a>
+      <nav>
+        <a href="./">الرئيسية</a>
+        <a class="on" href="support.html">الدعم</a>
+        <a href="privacy.html">الخصوصية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap page">
+    <h1>الدعم</h1>
+    <p class="lead">شوف الأسئلة المتكررة، وإذا ما لقيت جوابك اكتب لنا تحت ونرجع نتواصل معك.</p>
+
+    <h2 style="margin-top: 10px">أسئلة متكررة</h2>
+    <details><summary>أول مرة ألعب بلوت، من وين أبدأ؟</summary><p>من الشاشة الرئيسية افتح «الدروس». أول درس يعلّمك أسماء الورق، وبعدها الأكلة والحكم والشراء خطوة بخطوة. ووقت اللعب شغّل «المدرب» يقول لك وش أحسن ورقة وليش.</p></details>
+    <details><summary>كيف ألعب مع ربعي؟</summary><p>اضغط «لعب سريع» واختر «أونلاين»، بعدها «سوّ غرفة» وشارك الكود مع ربعك. أو اختر «لعب سريع» عشان تلعب مع ناس من كل مكان.</p></details>
+    <details><summary>المعلّق ما يتكلم، وش أسوي؟</summary><p>تأكد إن «المعلّق الصوتي» شغّال من الإعدادات، وإن زر الصامت في الجوال مو مفعّل، وارفع الصوت.</p></details>
+    <details><summary>كيف يشتغل تنبيه وقت الصلاة؟</summary><p>إذا دخل وقت الصلاة وأنت تلعب، المعلّق ينبهك مرة وحدة. نحسب الوقت بطريقة أم القرى من موقعك التقريبي إذا سمحت بالموقع، وإذا ما سمحت نستخدم عاصمة دولتك.</p></details>
+    <details><summary>اشتريت وما وصلني شي؟</summary><p>افتح «ماستر بلس» في التطبيق واضغط «استعادة المشتريات». وإذا ما ضبط، راسلنا من النموذج تحت.</p></details>
+    <details><summary>كيف ألغي اشتراك ماستر بلس؟</summary><p>من إعدادات الآيفون ← اسمك ← الاشتراكات ← بلوت ماستر ← إلغاء الاشتراك. يظل شغّال لين نهاية المدة اللي دفعتها.</p></details>
+    <details><summary>أبي شخصية خاصة تشبهني</summary><p>من «أنا» اضغط على صورتك ← «شخصية خاصة فيك». توصف شكلك ونجهزها لك، وتوصلك داخل التطبيق.</p></details>
+    <details><summary>هل فيه فلوس أو مراهنات في اللعب؟</summary><p>لا. النقاط للعب والمتجر داخل التطبيق بس، وما تنصرف ولا تتحول لفلوس.</p></details>
+    <details><summary>وش الفرق بين الصن والحكم؟</summary><p>في الصن ما فيه شكل أقوى، والأقوى في كل أكلة أكبر ورقة من الشكل اللي انفتح. وفي الحكم فيه شكل واحد «حكم» يقطع كل الأشكال الثانية. وتلقى كل الكلمات في «القاموس» داخل التطبيق.</p></details>
+
+    <h2 id="contact">تواصل معنا</h2>
+    <form id="f" novalidate>
+      <div class="row">
+        <label>اسمك<input name="name" required maxlength="80" autocomplete="name" /></label>
+        <label>إيميلك أو جوالك<input name="contact" required maxlength="120" autocomplete="email" /></label>
+      </div>
+      <label>الموضوع
+        <select name="topic">
+          <option value="مشكلة">مشكلة في التطبيق</option>
+          <option value="مشتريات">المشتريات والاشتراك</option>
+          <option value="اقتراح">اقتراح أو فكرة</option>
+          <option value="شخصية خاصة">الشخصية الخاصة</option>
+          <option value="غير ذلك">غير ذلك</option>
+        </select>
+      </label>
+      <label>رسالتك<textarea name="message" required maxlength="3000" placeholder="اكتب لنا بالتفصيل…"></textarea></label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <div class="msg" id="m" role="status"></div>
+      <button type="submit" id="b">أرسل</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© ٢٠٢٦ بلوت ماستر</span>
+      <span><a href="./">الرئيسية</a> · <a href="privacy.html">سياسة الخصوصية</a></span>
+    </div>
+  </footer>
+
+  <script>
+    // الرسائل تنحفظ في قاعدة بيانات التطبيق (Supabase)، ومحد يقدر يقرأها إلا صاحبة التطبيق
+    const URL_ = 'https://khgwkuvasmoighookzzw.supabase.co/rest/v1/rpc/submit_baloot_support';
+    const KEY = 'sb_publishable_luCB0DwkRPdTCuRjZoju2Q_KoHbGP6f';
+    const f = document.getElementById('f'), m = document.getElementById('m'), b = document.getElementById('b');
+    const show = (t, ok) => { m.textContent = t; m.className = 'msg ' + (ok ? 'ok' : 'err'); };
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const d = Object.fromEntries(new FormData(f));
+      if (d.website) return; // روبوت
+      if (!d.name.trim() || d.contact.trim().length < 3 || d.message.trim().length < 2) return show('عبّ اسمك ووسيلة التواصل والرسالة.', false);
+      b.disabled = true; b.textContent = 'يرسل…';
+      try {
+        const r = await fetch(URL_, {
+          method: 'POST',
+          headers: { apikey: KEY, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ p_name: d.name, p_contact: d.contact, p_topic: d.topic, p_message: d.message, p_source: 'web' }),
+        });
+        const ok = r.ok && (await r.json()) === true;
+        if (ok) { f.reset(); show('وصلتنا رسالتك، شكراً لك! نرجع نتواصل معك قريب إن شاء الله.', true); }
+        else show('أرسلت رسايل كثير. جرّب بعد شوي.', false);
+      } catch { show('ما قدرنا نرسل. تأكد من الإنترنت وجرّب مرة ثانية.', false); }
+      b.disabled = false; b.textContent = 'أرسل';
+    });
+  </script>
+</body>
+</html>
